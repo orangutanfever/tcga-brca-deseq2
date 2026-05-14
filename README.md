@@ -42,7 +42,7 @@ BiocManager::install(c(
   "DESeq2",
   "fgsea"
 ))
-install.packages(c("msigdbr", "ggplot2", "pheatmap"))
+install.packages(c("msigdbr", "data.table"))
 ```
 
 ## Usage
@@ -68,6 +68,7 @@ tcga-brca-deseq2/
 - Reference level: Solid Tissue Normal (log2FC = Tumor relative to Normal)
 - Filtering: genes with ≥10 counts in at least 1 sample retained
 - fgsea ranking metric: log2FC × −log10(pvalue + 1e−300)
+- Visualizations (volcano plot, enrichment plots) — coming soon
 
 ## Author
 
